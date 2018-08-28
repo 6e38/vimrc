@@ -6,6 +6,7 @@ set ts=2 sw=2 expandtab
 set showmatch
 
 autocmd filetype c,cpp,java,ruby,perl,php set cindent
+autocmd filetype xml set ai
 autocmd filetype html,css set ai nocindent
 autocmd filetype javascript set ai
 autocmd filetype py set ai ts=4 sw=4
