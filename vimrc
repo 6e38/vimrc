@@ -6,13 +6,13 @@ set ts=2 sw=2 expandtab
 set showmatch
 
 autocmd filetype c,cpp,java,ruby,perl,php set cindent
-autocmd filetype xml set ai
 autocmd filetype html,css set ai nocindent
 autocmd filetype javascript set ai
 autocmd filetype py set ai ts=4 sw=4
 autocmd BufRead *.h set cindent ai showmatch
 autocmd BufRead *.txt set linebreak
 autocmd BufRead *.bat set ai
+autocmd BufRead *.xml set ai
 
 " Manage swap and backup files
 let backupFolder=".vimbackup"
@@ -37,6 +37,7 @@ let &backupdir=backupPath."//"
 set viminfo='20,\"100,:20,%
 
 set diffopt=filler,vertical
+set diffopt+=iwhite
 
 if has("gui_running")
 
